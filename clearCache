@@ -1,0 +1,5 @@
+#/bin/bash
+
+# Eliminar todas las carpetas __pycache__ y archivos .pyc
+find . -name "__pycache__" -type d -exec rm -r {} +
+find . -name "*.pyc" -exec rm -f {} +

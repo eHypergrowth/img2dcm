@@ -6,3 +6,8 @@ venv/
 
 # Ignorar archivos de registro
 *.log
+
+# Ignorar caché de Python
+__pycache__/
+*.pyc
+*.pyo
