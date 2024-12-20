@@ -1,0 +1,4 @@
+pyside6
+pydicom
+Pillow
+numpy

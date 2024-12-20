@@ -1,0 +1,8 @@
+# Ignorar la carpeta dcm4che-5.33.1/
+dcm4che-5.33.1/
+
+# Ignorar el entorno virtual de Python
+venv/
+
+# Ignorar archivos de registro
+*.log
