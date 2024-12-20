@@ -3,3 +3,7 @@
 # Eliminar todas las carpetas __pycache__ y archivos .pyc
 find . -name "__pycache__" -type d -exec rm -r {} +
 find . -name "*.pyc" -exec rm -f {} +
+
+git rm -r --cached dcm4che-5.33.1/ venv/ __pycache__/
+git rm --cached *.log
+git rm --cached *.pyc
