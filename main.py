@@ -86,13 +86,14 @@ class MainWindow(QMainWindow):
             return
 
         try:
-            finds_path = os.getenv("FINDSCU_PATH", "/home/skynet/Documentos/GitHub/img2dcm/dcm4che-5.33.1/bin/findscu")
+            finds_path = os.path.join(os.getcwd(), "dcm4che-5.33.1", "bin", "findscu")
             command = [
                 finds_path,
                 "-c", "DCM4CHEE@172.17.200.23:11112",
                 "-m", f"PatientID={patient_id}",
                 "-r", "PatientName"
             ]
+
 
             result = subprocess.run(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
 

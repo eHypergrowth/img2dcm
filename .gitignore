@@ -1,8 +1,8 @@
 # Ignorar la carpeta dcm4che-5.33.1/
-dcm4che-5.33.1/
+dcm4che-5.33.1/*
 
 # Ignorar el entorno virtual de Python
-venv/
+venv/*
 
 # Ignorar archivos de registro
 *.log
@@ -11,3 +11,10 @@ venv/
 __pycache__/
 *.pyc
 *.pyo
+
+# Ignorar carpetas generadas por PyInstaller
+build/
+dist/
+
+# Ignorar archivos específicos generados durante el proceso de empaquetado
+*.spec
